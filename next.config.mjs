@@ -1,16 +1,16 @@
 /** @type {import('next').NextConfig} */
 
 const cspHeader = `
-    default-src 'self' *.trycloudflare.com;
-    img-src 'self' *.trycloudflare.com;
-    connect-src 'self' *.trycloudflare.com
-    script-src 'self' *.trycloudflare.com;
-    style-src 'self' *.trycloudflare.com;
-    font-src 'self' *;
+    default-src 'self' *.trycloudflare.com *.canvas-app.dscvr.one;
+    img-src 'self' * https://*.trycloudflare.com https://*.canvas-app.dscvr.one https://nextjs.org;
+    connect-src 'self' https://*.trycloudflare.com https://*.canvas-app.dscvr.one https://nextjs.org;
+    script-src 'self' https://*.trycloudflare.com https://*.canvas-app.dscvr.one https://nextjs.org;
+    style-src 'self' https://*.trycloudflare.com https://*.canvas-app.dscvr.one https://nextjs.org;
+    font-src 'self' https://*.trycloudflare.com https://*.canvas-app.dscvr.one https://nextjs.org;
     object-src 'none' *;
     base-uri 'self';
     form-action 'self';
-    frame-ancestors 'none';
+    frame-ancestors 'self' https://*.dscvr.one https://dscvr.one;
     upgrade-insecure-requests;
 `
 
