@@ -1,11 +1,5 @@
 /** @type {import('next').NextConfig} */
 
-const cspHeader = `
-    default-src 'self' https://*.trycloudflare.com https://*.canvas-app.dscvr.one;
-    style-src https:;
-    script-src 'self';
-`
-
 // img-src 'self' * https://*.trycloudflare.com https://*.canvas-app.dscvr.one;
 // connect-src 'self' https://*.trycloudflare.com https://*.canvas-app.dscvr.one https://api.dscvr.one https://api1.stg.dscvr.one https://*.helius-rpc.com https://api.devnet.solana.com;
 // font-src 'self' https://*.trycloudflare.com https://*.canvas-app.dscvr.one;
